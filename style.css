@@ -7,14 +7,9 @@
 body {
   background-color: #f6f3ec;
   display: flex;
-  text-align: center;
-  justify-content: space-between;
+  flex-direction: column;
   color: white;
-}
-div {
-  display: flex;
-  text-align: center;
-  justify-content: space-between;
+  height: 100vh;
 }
 nav,
 header {
@@ -26,7 +21,7 @@ header {
 ul {
   display: flex;
   text-align: center;
-  gap: 20%;
+  gap: 25px;
 }
 
 a,
