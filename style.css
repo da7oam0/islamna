@@ -1,32 +1,27 @@
 * {
   margin: 0px;
-  font-family: cairo;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 body {
   background-color: #f6f3ec;
   display: flex;
-  text-align: center;
-  justify-content: space-between;
+  flex-direction: column;
   color: white;
-}
-div {
-  display: flex;
-  text-align: center;
-  justify-content: space-between;
+  height: 100vh;
 }
 nav,
 header {
   display: flex;
   flex-direction: row;
   background-color: #0c4941;
-  width: 100%;
 }
 
 ul {
   display: flex;
   text-align: center;
-  gap: 20%;
+  gap: 25px;
 }
 
 a,
@@ -35,14 +30,14 @@ li {
   text-decoration: none;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   color: white;
+  font-size: 10px;
 }
 
 .logo {
-  margin: 1%;
   flex-direction: column;
   display: flex;
+  font-size: 10px;
 }
 
 i {
@@ -50,7 +45,8 @@ i {
   display: flex;
   flex-direction: row;
   margin-left: 10px;
-  font-size: xxx-large;
+  font-size: xx-large;
+  margin-left: 10px;
 }
 a:hover {
   color: #e4a61b;
