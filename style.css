@@ -1,18 +1,10 @@
-@media (max-width: 768px) {
-  i {
-    font-size: x-small;
-  }
-  li {
-    position: relative;
-      right: 50px;
-  }
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200..800&display=swap');
 
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  font-family: "Changa", sans-serif;
 }
 
 body {
@@ -69,4 +61,54 @@ h1 {
 }
 a:hover {
   color: #e4a61b;
+  border-bottom: 2px solid #e4a61b;
+  padding-bottom: 2px;
+}
+
+/* Style on the tablet */
+
+@media (max-width: 768px) {
+  i {
+    font-size: x-small;
+  }
+  li {
+    position: relative;
+    right: 50px;
+  }
+}
+
+/* Style on the phone */
+
+@media (max-width: 550px) {
+  nav {
+    height: 60px;
+  }
+  nav i {
+    width: 20px;
+    font-size: 22px;
+    margin-right: 10px;
+  }
+  .logo {
+    padding: 0;
+    gap: 0px;
+  }
+  .logo h1 {
+    font-size: 13px;
+    margin: 0;
+    line-height: 1.2;
+  }
+  .logo p {
+    font-size: 10px;
+    margin: 0;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  li a {
+    font-size: 5px;
+  }
+  ul {
+    gap: 15px;
+    margin-right: -20px;
+    left: 45%;
+  }
 }
