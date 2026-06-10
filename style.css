@@ -157,3 +157,22 @@ a:hover {
     height: 50px;
   }
 }
+.box {
+  color: #222;
+  padding: 25px;
+}
+
+.box h2 {
+  color: #e4a61b;
+  margin-bottom: 15px;
+}
+
+.box p {
+  margin-bottom: 10px;
+  line-height: 1.8;
+}
+
+aside button.active {
+  background-color: #0c4941;
+  color: white;
+}
