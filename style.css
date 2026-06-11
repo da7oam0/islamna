@@ -1,18 +1,12 @@
-@media (max-width: 768px) {
-  i {
-    font-size: x-small;
-  }
-  li {
-    position: relative;
-      right: 50px;
-  }
-}
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200..800&display=swap');
 
+     /* all items */
 
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  font-family: "Changa", sans-serif;
 }
 
 body {
@@ -20,6 +14,8 @@ body {
   color: white;
   min-height: 100vh;
 }
+
+      /* navbar */ 
 
 nav {
   display: flex;
@@ -69,4 +65,128 @@ h1 {
 }
 a:hover {
   color: #e4a61b;
+  border-bottom: 2px solid #e4a61b;
+  padding-bottom: 2px;
+}
+
+/* Style on the tablet */
+
+@media (max-width: 768px) {
+  i {
+    font-size: x-small;
+  }
+  li {
+    position: relative;
+    right: 50px;
+  }
+}
+
+/* Style on the phone */
+
+@media (max-width: 550px) {
+  
+   /* navbar mobile */
+  
+  nav {
+    height: 60px;
+  }
+  nav i {
+    width: 20px;
+    font-size: 22px;
+    margin-right: 10px;
+  }
+  .logo {
+    padding: 0;
+    gap: 0px;
+  }
+  .logo h1 {
+    font-size: 13px;
+    margin: 0;
+    line-height: 1.2;
+  }
+  .logo p {
+    font-size: 10px;
+    margin: 0;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  li a {
+    font-size: 5px;
+  }
+  ul {
+    gap: 15px;
+    left: 45%;
+  }
+
+    /* svg mobile */
+
+   .banner {
+    min-height: 300px;
+  }
+  .main-title {
+    left: 5%;
+    top: 55%;
+  }
+  .main-title h2 {
+    font-size: 1.8rem;
+  }
+  .wave-shape svg {
+    height: 50px;
+  }
+}
+
+      /* svg pc */
+
+.banner {
+  background-color: #0c4941;
+  min-height: 480px;
+  position: relative;
+}
+
+.main-title {
+  position: absolute;
+  right: 10%;
+  top: 45%;
+  transform: translateY(-50%);
+  text-align: right;
+  direction: rtl;
+}
+
+.main-title h2 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: white;
+  line-height: 1.2;
+}
+
+.main-title .gold-text {
+  color: #e4a61b;
+}
+
+.wave-shape {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  line-height: 0;
+}
+
+.wave-shape svg {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 120px;
+}
+
+    /* box */
+
+.box h2 {
+  color: #e4a61b;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.box p {
+  text-align: center;
+  padding: 20px;
 }
